@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="tickets.jpg" alt="Logo">
+            </div>
+    </header>
+    <div class="container">
+        <h2>Generate Ticket</h2>
+        <form id="generateForm">
+            <input type="text" id="username" placeholder="Your Full Name" required>
+            <input type="password" id="Ticket" placeholder="Generate Your Ticket Security Key" required>
+            <input type="email" id="Email" placeholder="We will send your ticket code to Your email" required>
+
+            <!-- Dropdown for selecting an event -->
+            <select id="eventSelect" required>
+                <option value="" disabled selected>Select Event</option>
+                <option value="Concert">Concert</option>
+                <option value="Movies">Movies</option>
+                <option value="Conference">Conference</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Sports">Sports Event</option>
+            </select>
+
+            <button type="submit">Generate Ticket Code</button>
+        </form>
+        <div class="admin-login">
+            <button onclick="location.href='index.html'">Back to home</button>
+        </div>
+        
+        <div id="ticketDisplay"></div>
+        
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
